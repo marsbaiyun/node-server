@@ -1,0 +1,16 @@
+<% include header.html %>
+<h1><%= title %></h1>
+<div class="container-fluid">
+    <form class="form-search" action="/additem" method="post">
+        <input type="text" class="input-medium search-query" name="uri">
+        <button type="submit" class="btn">addItem</button>
+    </form>
+
+    <form class="form-search" action="/getrate" method="post">
+        <input type="text" class="input-medium search-query" name="currency">
+        <button type="submit" class="btn">getRate</button>
+    </form>
+
+    <a class="btn" href="/getallrate">查看实时汇率</a>
+</div>
+<% include footer.html %>
