@@ -8,6 +8,8 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var item = require('./routes/item');
 var bankrate = require('./routes/bankrate');
+var flight = require('./routes/flight');
+
 var http = require('http');
 var path = require('path');
 var ejs = require('ejs');
@@ -41,8 +43,14 @@ app.get('/getallrate', bankrate.getallrates);
 //获取指定货币的实时汇率
 app.post('/getrate', bankrate.getsinglerate);
 
+//将amazon商品在sinoair商城上架
 app.post('/additem', item.addItem);
 
-http.createServer(app).listen(app.get('port'), function(){
+//订阅邮件推送
+app.get('/flightalert', flight.setalert);
+
+var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+server.timeout = 150000;

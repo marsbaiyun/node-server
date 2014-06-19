@@ -1,4 +1,7 @@
 <% include header.html %>
+<link href="/stylesheets/datepicker.min.css" rel="stylesheet">
+<script src="/javascripts/bootstrap-datepicker.js"></script>
+
 <h1><%= title %></h1>
 <div class="container-fluid">
     <form class="form-search" action="/additem" method="post">
@@ -12,5 +15,24 @@
     </form>
 
     <a class="btn" href="/getallrate">查看实时汇率</a>
+
+    <hr style="border: 0px">
+
+    <form class="form-search" action="/flightalert" method="get">
+        <input type="text" class="input-small" placeholder="flightnum" name="flightnum">
+        <input type="text" class="input-small" id="datetimepicker" placeholder="flightdate" name="flightdate">
+        <button type="submit" class="btn">订阅航班DEP状态推送</button>
+    </form>
+
+
+    <script type="text/javascript">
+        $('#datetimepicker').datepicker({
+            format: "yyyy-mm-dd",
+            todayBtn: "linked",
+            autoclose: true,
+            todayHighlight: true
+        });
+    </script>
+
 </div>
 <% include footer.html %>

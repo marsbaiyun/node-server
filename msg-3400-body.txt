@@ -1,0 +1,385 @@
+Delivered-To: marsbaiyp@gmail.com
+Received: by 10.140.36.139 with SMTP id p11csp90606qgp;
+        Mon, 16 Jun 2014 02:01:48 -0700 (PDT)
+X-Received: by 10.68.178.131 with SMTP id cy3mr22869413pbc.146.1402909307645;
+        Mon, 16 Jun 2014 02:01:47 -0700 (PDT)
+Return-Path: <baiyp@efreight.cn>
+Received: from m109-177.yeah.net (m109-177.yeah.net. [123.58.177.109])
+        by mx.google.com with ESMTP id qj3si9334294pbb.53.2014.06.16.02.01.46
+        for <marsbaiyp@gmail.com>;
+        Mon, 16 Jun 2014 02:01:47 -0700 (PDT)
+Received-SPF: none (google.com: baiyp@efreight.cn does not designate permitted sender hosts) client-ip=123.58.177.109;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: baiyp@efreight.cn does not designate permitted sender hosts) smtp.mail=baiyp@efreight.cn
+Received: from Mars-PC (unknown [218.205.136.198])
+	by m53-178.qiye.163.com (HMail) with ESMTPA id 0B0C113A85FD
+	for <marsbaiyp@gmail.com>; Mon, 16 Jun 2014 17:01:43 +0800 (CST)
+Date: Mon, 16 Jun 2014 17:01:51 +0800
+From: baiyp <baiyp@efreight.cn>
+To: marsbaiyp <marsbaiyp@gmail.com>
+Subject: SQ 960 Flight Status Message
+X-Priority: 3
+X-Has-Attach: no
+X-Mailer: Foxmail 7, 1, 3, 52[cn]
+Mime-Version: 1.0
+Message-ID: <201406161701493992271@efreight.cn>
+Content-Type: multipart/alternative;
+	boundary="----=_001_NextPart366151358636_=----"
+X-Antivirus: avast! (VPS 140615-1, 2014/06/16), Outbound message
+X-Antivirus-Status: Clean
+X-HM-Spam-Status: e1koWUFPN1dZCBgUCR5ZQUhVTkxCQkJCQklITEtNS05PTFdZCQ4XHghZQV
+	koKz0kKzooKCQyNSQzPjo*PilBS1VLQDYjJCI#KCQyNSQzPjo*PilBS1VLQCsvKSQ1NCQyNSQzPj
+	o*PilBSVVLQD8iNTo2MjgkMiskNTQkMjUkMz46Pz4pQUtVS0AyKyQvND86IiQ4NS8kSktLJE5LS0
+	FLVUtIQDIrJE4kNjI1Li8#JDg1LyRLJEpLQUtVS0AyKyRISyQ2MjUuLz4kODUvJEskTktBS1VLQD
+	IrJEokMzQuKSQ4NS8kSyRKS0tBS1VLQDIrJEokNjI1Li8#JDg1LyRLJEpLQUtVS0AoLjkkPkFKVU
+	5OWQY+
+X-HM-Sender-Digest: e1kSHx4VD1lBWUc6KzY6Pyo5LjorMjpDHDoXOjAYOj8KCwJVSlVKT0tJ
+	QktCSEtISUNKVTMWGhIXVRkaEgILOx4dCR4SHBMPVRgVRVlXWQweGVlBHRoXCB5XWQgBWUFKSElJ
+	TjdXWRILWUFZSUpDVUlLTlVKSE1VSkJDWQY+
+
+This is a multi-part message in MIME format.
+
+------=_001_NextPart366151358636_=----
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+DQoNCg0KDQo1MjIgU1cgNXRoIEF2ZW51ZSwgU3VpdGUgMjAwDQpQb3J0bGFuZCwgT1IgOTcyMDQN
+Cg0KIA0KIFNpbmdhcG9yZSBBaXJsaW5lcyBTUSAjOTYwDQpTdGF0dXM6IEluLWZsaWdodCANCkV2
+ZW50IDogVGhlIHN0YXR1cyBvZiB0aGUgZmxpZ2h0IGhhcyBjaGFuZ2VkLiAgIA0KDQoNCkRFUEFS
+VFM6IDE2IEpVTiAoU0lOKSBDSEFOR0kgSU5URVJOQVRJT05BTCBBSVJQT1JUIA0KU2NoZWR1bGVk
+R2F0ZVJ1bndheURlbGF5VGVybWluYWwvR2F0ZS9CYWdnYWdlDQoNCjM6MjAgUE0gMzozMiBQTSAx
+MiBtaW4gMiAvIEUxMSANCg0KDQoNCkFSUklWRVM6IDE2IEpVTiAoQ0dLKSBTT0VLQVJOTy1IQVRU
+QSBJTlRFUk5BVElPTkFMIEFJUlBPUlQgDQpTY2hlZHVsZWRHYXRlUnVud2F5RGVsYXlUZXJtaW5h
+bC9HYXRlL0JhZ2dhZ2UNCg0KNDowNSBQTSBtaW4gMiANCg0KDQoNCiogaXRhbGljcyBpbmRpY2F0
+ZSBlc3RpbWF0ZWQgdGltZSANCg0KVGhlIGluZm9ybWF0aW9uIHByZXNlbnRlZCBoZXJlIGFzIGEg
+c2VydmljZSB0byBvdXIgY3VzdG9tZXJzIGlzIHByb3ZpZGVkICJhcyBpcyIgYW5kIG5vIHdhcnJh
+bnRpZXMgb2YgYW55IHR5cGUgYXJlIHByb3ZpZGVkLiBQbGVhc2UgY29udGFjdCB5b3VyIGFpcmxp
+bmUgaWYgeW91IGhhdmUgYW55IG90aGVyIHF1ZXN0aW9ucyBhYm91dCB0aGUgZmxpZ2h0LiBVbnN1
+YnNjcmliZSBmcm9tIG5vdGlmaWNhdGlvbiBtb25pdG9yIA0KDQp3d3cuZmxpZ2h0c3RhdHMuY29t
+ICANCg0KDQogIA==
+
+------=_001_NextPart366151358636_=----
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns=3D"http://www.w3.org/1999/xhtml"=20
+xmlns:o><HEAD><TITLE>FlightStats</TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<STYLE type=3Dtext/css>
+P {
+	MARGIN-TOP: 0px; FONT-FAMILY: myriad, verdana, sans-serif; MARGIN-BOTTOM:=
+ 0px; COLOR: #7f7f7f; FONT-SIZE: 11px
+}
+TR {
+	FONT-FAMILY: myriad, verdana, sans-serif; COLOR: #7f7f7f; FONT-SIZE: 11px
+}
+TD {
+	FONT-FAMILY: myriad, verdana, sans-serif; COLOR: #7f7f7f; FONT-SIZE: 11px
+}
+TABLE {
+	FONT-FAMILY: myriad, verdana, sans-serif; COLOR: #7f7f7f; FONT-SIZE: 11px
+}
+A {
+	COLOR: #5988b9; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #7f7f7f; TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+A:link {
+	TEXT-DECORATION: none
+}
+.salutation {
+	COLOR: #000000; FONT-WEIGHT: bold
+}
+.status {
+	COLOR: #000000; FONT-SIZE: 12px
+}
+.status_caps {
+	TEXT-TRANSFORM: uppercase; COLOR: #000000; FONT-SIZE: 12px
+}
+.schedule {
+	COLOR: #000000; FONT-WEIGHT: bold
+}
+.arrow {
+	BACKGROUND-IMAGE: url(http://dem5xqcn61lj8.cloudfront.net/Email/red_check=
+.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 50% top; COLOR: =
+#000000; FONT-WEIGHT: bold
+}
+.schedule_data {
+	COLOR: #4c4c4c
+}
+.delay {
+	BACKGROUND-COLOR: #5988b9; COLOR: #ffffff
+}
+.nine {
+	FONT-SIZE: 9px
+}
+DIV.FoxDiv20140616170044934985 {
+	FONT-FAMILY: myriad, verdana, sans-serif; BACKGROUND: #6e6e6e; COLOR: #7f=
+7f7f; FONT-SIZE: 11px
+}
+DIV.FoxDiv20140616170108373204 {
+	LINE-HEIGHT: 1.5; MARGIN: 10px; FONT-FAMILY: =E5=BE=AE=E8=BD=AF=E9=9B=85=
+=E9=BB=91; COLOR: #000000; FONT-SIZE: 10.5pt
+}
+BODY {
+	LINE-HEIGHT: 1.5; FONT-FAMILY: =E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91; COLO=
+R: #000000; FONT-SIZE: 10.5pt
+}
+</STYLE>
+
+<STYLE>BLOCKQUOTE {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 2em
+}
+OL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+UL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+</STYLE>
+
+<META name=3DGENERATOR content=3D"MSHTML 8.00.7600.16385">
+<STYLE>BLOCKQUOTE {
+	MARGIN-TOP: 0px
+}
+OL {
+	MARGIN-TOP: 0px
+}
+UL {
+	MARGIN-TOP: 0px
+}
+</STYLE>
+</HEAD>
+<BODY style=3D"MARGIN: 10px">
+<DIV>
+<DIV>
+<DIV style=3D"FONT-FAMILY: verdana; FONT-SIZE: 10pt">
+<P style=3D"TEXT-ALIGN: left; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" class=
+=3DMsoNormal=20
+align=3Dleft>
+<DIV>&nbsp;</DIV></P></DIV></DIV></DIV>
+<DIV>
+<DIV style=3D"BACKGROUND-COLOR: white" class=3DFoxDiv20140616170108373204>
+<DIV>
+<DIV style=3D"BACKGROUND-COLOR: white" class=3DFoxDiv20140616170044934985>
+<CENTER>
+<TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D560 bgColor=3D#f=
+fffff>
+  <TBODY>
+  <TR>
+    <TD vAlign=3Dtop><IMG border=3D0 alt=3D""=20
+      src=3D"http://www.flightstats.com/images/email/top_left.gif"></TD></=
+TR></TBODY></TABLE>
+<TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D560 bgColor=3D#f=
+fffff>
+  <TBODY>
+  <TR>
+    <TD width=3D25>
+    <TD align=3Dleft><IMG border=3D0 alt=3D""=20
+      src=3D"http://flightstatsimages.s3.amazonaws.com/EMailAlertIcons/fli=
+ght_stats_header_logo.gif"></TD>
+    <TD><BR>522 SW 5th Avenue, Suite 200<BR>Portland, OR=20
+  97204<BR></TD></TR></TBODY></TABLE><TD valign=3D"top"><IMG border=3D0 al=
+t=3D""=20
+src=3D"http://www.flightstats.com/images/email/top_right.gif"></TD> </TR><=
+TR><TD=20
+colspan=3D"3" height=3D"1" align=3D"center">
+<TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D540 bgColor=3D#d=
+1d3da=20
+align=3Dcenter>
+  <TBODY>
+  <TR>
+    <TD bgColor=3D#d1d3da height=3D1></TD></TR></TBODY></TABLE></TD></TR><=
+TR><TD=20
+colspan=3D"3" height=3D"10"></TD></TR><TR><TD colspan=3D"3" align=3D"cente=
+r"><A=20
+href=3D"http://pubads.g.doubleclick.net/gampad/jump?iu=3D/1010197/EMail_to=
+p_468x60&amp;sz=3D468x60&amp;c=3D12345&amp;t=3Dstatus%3DA"><IMG=20
+src=3D"http://pubads.g.doubleclick.net/gampad/ad?iu=3D/1010197/EMail_top_4=
+68x60&amp;sz=3D468x60&amp;c=3D12345&amp;t=3Dstatus%3DA"></A>=20
+</TD></TR><TR><TD colspan=3D"3" height=3D"10"></TD></TR><TR><TD colspan=3D=
+"3"=20
+align=3D"center">
+<TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D510 bgColor=3D#f=
+fffff>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D510 bgColo=
+r=3D#ffffff>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dstatus width=3D399 align=3Dleft>Singapore Airl=
+ines SQ=20
+                  #960<BR>Status: In-flight <BR>Event : The status of the =
+flight=20
+                  has changed. </TD>
+                <TD width=3D111 align=3Dright><A=20
+                  href=3D"http://www.flightstats.com/go/FlightStatus/fligh=
+tStatusByFlight.do?id=3D391051928&amp;extended=3D1&amp;queryType=3Did"><IM=
+G=20
+                  border=3D0 alt=3D""=20
+                  src=3D"http://www.flightstats.com/images/email/view_flig=
+ht_details.gif">=20
+                  </A><A=20
+                  href=3D"http://www.flightstats.com/go/FlightRating/fligh=
+tRatingByFlight.do?airlineCode=3DSQ&amp;flightNumber=3D960&amp;departureAi=
+rportCode=3DSIN&amp;arrivalAirportCode=3DCGK"><IMG=20
+                  border=3D0 alt=3D""=20
+                  src=3D"http://www.flightstats.com/images/email/flight_hi=
+story_rating.gif">=20
+                  </A></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD height=3D30></TD></TR>
+        <TR>
+          <TD class=3Dstatus_caps align=3Dleft>DEPARTS: 16 JUN (SIN) CHANG=
+I=20
+            INTERNATIONAL AIRPORT </TD></TR>
+        <TR>
+          <TD>
+            <TABLE border=3D0 cellSpacing=3D1 cellPadding=3D0 width=3D510=20
+            bgColor=3D#c8cbd1>
+              <TBODY>
+              <TR>
+                <TD class=3Dstatus bgColor=3D#e5e5e5>
+                  <TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D510=20
+                  bgColor=3D#e5e5e5 height=3D30>
+                    <TBODY>
+                    <TR>
+                      <TD class=3Dschedule width=3D85 align=3Dmiddle>Sched=
+uled</TD>
+                      <TD class=3Dschedule width=3D85 align=3Dmiddle>Gate<=
+/TD>
+                      <TD class=3Dschedule width=3D85 align=3Dmiddle>Runwa=
+y</TD>
+                      <TD class=3Darrow width=3D65 align=3Dmiddle>Delay</T=
+D>
+                      <TD class=3Dschedule width=3D190=20
+                        align=3Dmiddle>Terminal/Gate/Baggage</TD></TR></TB=
+ODY></TABLE></TD></TR>
+              <TR>
+                <TD class=3Dstatus bgColor=3D#e5e5e5>
+                  <TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D510=20
+                  bgColor=3D#e5e5e5 height=3D30>
+                    <TBODY>
+                    <TR>
+                      <TD class=3Dschedule_data width=3D85 align=3Dmiddle>=
+3:20 PM=20
+</TD>
+                      <TD class=3Dschedule_data width=3D85 align=3Dmiddle>=
+3:32 PM=20
+</TD>
+                      <TD class=3Dschedule_data width=3D85 align=3Dmiddle>=
+</TD>
+                      <TD class=3Ddelay width=3D65 align=3Dmiddle>12 min <=
+/TD>
+                      <TD class=3Dschedule_data width=3D190 align=3Dmiddle=
+>2 / E11=20
+                      </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>=
+</TD></TR>
+        <TR>
+          <TD height=3D20></TD></TR>
+        <TR>
+          <TD class=3Dstatus_caps align=3Dleft>ARRIVES: 16 JUN (CGK)=20
+            SOEKARNO-HATTA INTERNATIONAL AIRPORT </TD></TR>
+        <TR>
+          <TD>
+            <TABLE border=3D0 cellSpacing=3D1 cellPadding=3D0 width=3D510=20
+            bgColor=3D#c8cbd1>
+              <TBODY>
+              <TR>
+                <TD class=3Dstatus bgColor=3D#e5e5e5>
+                  <TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D510=20
+                  bgColor=3D#e5e5e5 height=3D30>
+                    <TBODY>
+                    <TR>
+                      <TD class=3Dschedule width=3D85 align=3Dmiddle>Sched=
+uled</TD>
+                      <TD class=3Dschedule width=3D85 align=3Dmiddle>Gate<=
+/TD>
+                      <TD class=3Dschedule width=3D85 align=3Dmiddle>Runwa=
+y</TD>
+                      <TD class=3Darrow width=3D65 align=3Dmiddle>Delay</T=
+D>
+                      <TD class=3Dschedule width=3D190=20
+                        align=3Dmiddle>Terminal/Gate/Baggage</TD></TR></TB=
+ODY></TABLE></TD></TR>
+              <TR>
+                <TD class=3Dstatus bgColor=3D#e5e5e5>
+                  <TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D510=20
+                  bgColor=3D#e5e5e5 height=3D30>
+                    <TBODY>
+                    <TR>
+                      <TD class=3Dschedule_data width=3D85 align=3Dmiddle>=
+4:05 PM=20
+</TD>
+                      <TD class=3Dschedule_data width=3D85 align=3Dmiddle>=
+</TD>
+                      <TD class=3Dschedule_data width=3D85 align=3Dmiddle>=
+</TD>
+                      <TD class=3Ddelay width=3D65 align=3Dmiddle><I>min</=
+I> </TD>
+                      <TD class=3Dschedule_data width=3D190 align=3Dmiddle=
+>2=20
+                    </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></=
+TD></TR>
+        <TR>
+          <TD height=3D3></TD></TR>
+        <TR>
+          <TD class=3Dnine align=3Dleft>* italics indicate estimated time =
+</TD></TR>
+        <TR>
+          <TD height=3D20></TD></TR>
+        <TR>
+          <TD align=3Dleft>The information presented here as a service to =
+our=20
+            customers is provided "as is" and no warranties of any type ar=
+e=20
+            provided. Please contact your airline if you have any other=20
+            questions about the flight. <A=20
+            href=3D"http://www.flightstats.com/go/FlightMonitor/flightRule=
+Deactivate.do?emsFlightRuleId=3D195556675">Unsubscribe=20
+            from notification monitor</A> </TD></TR>
+        <TR>
+          <TD height=3D15></TD></TR>
+        <TR>
+          <TD>
+            <TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0>
+              <TBODY>
+              <TR>
+                <TD vAlign=3Dbottom width=3D375 align=3Dleft><A=20
+                  href=3D"http://flightstats.com/">www.flightstats.com</A>=
+ </TD>
+                <TD width=3D135 align=3Dright><A=20
+                  href=3D"http://flightstats.com/"><IMG border=3D0 alt=3D"=
+"=20
+                  src=3D"http://www.flightstats.com/images/email/flight_st=
+ats.gif"></A>=20
+                </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><=
+/TR></TBODY></TABLE></TD></TR><TR><TD=20
+valign=3D"bottom"><IMG border=3D0 alt=3D""=20
+src=3D"http://www.flightstats.com/images/email/bottom_left.gif"></TD> <TD=20
+width=3D"560"></TD><TD valign=3D"bottom"><IMG border=3D0 alt=3D""=20
+src=3D"http://www.flightstats.com/images/email/bottom_right.gif"></TD>=20
+</TR></TABLE></CENTER></DIV></DIV></DIV></DIV></BODY></HTML>
+
+------=_001_NextPart366151358636_=------
+

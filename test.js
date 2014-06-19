@@ -4,22 +4,80 @@
 var request = require('request');
 var httputil = require('./util/HttpUtil');
 var async = require('async');
+var later = require('later');
 var redis = require('redis');
 var client = redis.createClient(6379, '192.168.0.218');
 var t = require('./util/t');
 var log = t.log;
 var domain = require('domain');
 
+/*client.hset('flight', 'SQ237', '2014-06-16',function(err, reply){
+    if (err) {
+        console.log('err',err);
+    } else {
+        console.log(reply);
+        console.log(reply == null);
 
-var d = domain.create();
+    }
+    client.quit();
+});*/
 
-d.run(domeintest('haha'));
 
-function domeintest (temp) {
-    console.log('this is ' + temp);
-    throw Error(temp);
-}
+//client.hset("flights", "SQ0807|2014-06-13", "618-80906840", redis.print);
+//client.quit();
 
+/*client.hexists("flights", "999-12345675|CA2003", function (err, replies) {
+    if (err) {
+        console.log('err', err);
+    } else {
+        console.log('replies', replies);
+        if (replies == 1) {
+            client.hdel('flights', '999-12345675|CA2003', function(err, replies){
+                if (err) {
+                    console.log('err', err);
+                } else {
+                    console.log('replies', replies);
+                }
+            });
+        }
+    }
+});*/
+
+client.hkeys("pushmsg", function (err, replies) {
+    console.log(replies.length + " replies:");
+    replies.forEach(function (reply, i) {
+        console.log("    " + i + ": " + reply);
+
+        client.hget("pushmsg",reply,function(err, reply){
+            console.log(reply);
+        });
+    });
+    client.quit();
+});
+
+
+//var cronJob = require('cron').CronJob;
+//var myJob = new cronJob('0 */10 * * * *', function(){
+//    console.log(new Date().toLocaleString());
+//},function(){
+//
+//},null,true);
+//console.log('now is ' + new Date().toLocaleString());
+//myJob.start();
+
+//var CronJob  = require('cron').CronJob;
+//var myJob = new CronJob('*/10 * * * * *', function(){
+//    console.log(new Date().toLocaleString());
+//},function(){
+//    console.log(new Date().toLocaleString() + ' task stop!');
+//}, function(){
+//
+//},true);
+//console.log('now is ' + new Date().toLocaleString());
+//setTimeout(function(){
+//    myJob.stop();
+//},20000);
+//myJob.start();
 
 
 
