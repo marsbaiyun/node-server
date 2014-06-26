@@ -15,15 +15,15 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 });
 
 
-send({
+/*send({
     'reciever': 'baiyp@efreight.me',
     'subject': 'nodemailer test',
     'content': 'this is a test.',
     'filepath': '/mynodejs/node-server/util/2033103.jpg'
-});
+});*/
 
-//exports.send = function(mailinfo){
-function send(mailinfo){
+MailUtil.prototype.send = function(mailinfo){
+//function send(mailinfo){
     var revieverlist = mailinfo['reciever'];
     var subject = mailinfo['subject'];
     var content = mailinfo['content'];

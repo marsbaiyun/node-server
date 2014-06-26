@@ -73,8 +73,6 @@ exports.setalert = function(req, res){
                                     'username': 'MarsOnly'
                                 }
                             }, function(error, response, content){
-//                        console.log(response.headers);
-//                        console.log(content);
                                 if (!error && response.statusCode == 200) {
                                     console.log('login success!');
                                     var regstr = /URL='[^']+'/;
@@ -84,8 +82,6 @@ exports.setalert = function(req, res){
                                         request.get({
                                             uri: reduri
                                         },function(error, response, content){
-//                                    console.log(response.headers);
-//                                    console.log(content);
 
                                             var flighturi = 'https://www.flightstats.com/go/FlightMonitor/flightRules.do?createAlert=true&airline=' + airline + '&flightNumber=' + flightnum + '&departureDate=' + flightdate + '&x=50&y=32';
                                             request.get({
@@ -97,9 +93,6 @@ exports.setalert = function(req, res){
                                                     'User-Agent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)'
                                                 }
                                             }, function(error, response, content){
-//                                        console.log(response.statusCode);
-//                                        console.log(response.headers);
-//                                        console.log(content);
 
                                                 var $ = cheerio.load(content);
 
@@ -116,8 +109,8 @@ exports.setalert = function(req, res){
                                                 var alerturi = 'https://www.flightstats.com/go/FlightMonitor/flightRuleCreateBySegment.do?' +
                                                     'selected=' + selected + '&statusCodeList=&selectionList=&airlineCodeList=&flightNumberList=&' +
                                                     'departureDateList=&arrivalDateList=&departureAirportCodeList=&arrivalAirportCodeList=&depAlerts=true&' +
-                                                    '__checkbox_arrAlerts=__checkbox_true&msgDest=0&emailAddress=efreightsinoair@gmail.com&' +
-                                                    'msgType=1&wirelessNumber=&wirelessServiceCode=Select...&x=41&y=4';
+                                                    '__checkbox_arrAlerts=__checkbox_true&msgDest=0&emailAddress=flight@efreight.cn&' +
+                                                    'msgType=2&wirelessNumber=&wirelessServiceCode=Select...&x=41&y=4';
 
                                                 request.get({
                                                     uri: alerturi,
@@ -183,7 +176,7 @@ exports.setalert = function(req, res){
 
 function addflights(flightnum, realflightnum, flightdate){
     var client = redis.createClient(6379, '192.168.0.218');
-    client.hset('flights', realflightnum, flightnum + '|' + flightdate, function(err, reply){
+    client.hset('flights', realflightnum + '|' + flightdate, flightnum, function(err, reply){
         if (err) {
             console.log('add flights : ' + flightnum + 'realflightnum : ' + realflightnum + ' flightdate : ' + flightdate + ' error : ' + err);
         } else {

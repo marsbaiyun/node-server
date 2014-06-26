@@ -10,6 +10,76 @@ var client = redis.createClient(6379, '192.168.0.218');
 var t = require('./util/t');
 var log = t.log;
 var domain = require('domain');
+var mailUtil = require('./util/MailUtil');
+var Q = require('q');
+
+var promise = getPushmsgKeys();
+promise
+    .then(function(data){
+        data.forEach(function (reply, i) {
+            client.hget("pushmsg",reply,function(err, reply){
+                if(err){
+                    console.log('this is err : ' + err);
+                } else {
+                    console.log('this is reply : ' + reply);
+                }
+
+            });
+        });
+    })
+    .then(function(obj){
+        console.log(' this is : ' + obj);
+    },function(err){
+        console.log(err);
+    })
+
+
+function getPushmsgKeys(){
+    var deferred = Q.defer();
+    client.hkeys("pushmsg", function (err, reply) {
+        if(err){
+            deferred.reject(err);
+        } else {
+            deferred.resolve(reply);
+        }
+
+    });
+    return deferred.promise;
+}
+
+function getPushmsg(keys){
+    var deferred = Q.defer();
+    keys.forEach(function (reply, i) {
+        client.hget("pushmsg",keys,function(err, reply){
+            if(err){
+                deferred.reject(err);
+            } else {
+                deferred.resolve(reply);
+            }
+
+        });
+    });
+    return deferred.promise;
+}
+
+/*request.post({
+    uri: 'http://192.168.0.218:8001/HttpEngine',
+    form: {
+        'serviceXml': '<Service><ServiceURL>RealQuery</ServiceURL><ServiceAction>updateFlightDate</ServiceAction><ServiceData><flight><flightno>SQ0328</flightno><flightdate>2014-06-23</flightdate><realflightdate>2014-06-23 06:32:00</realflightdate></flight></ServiceData></Service>'
+    }
+},function(err, response, body){
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(body);
+        mailUtil.send({
+            'reciever': 'marsbaiyp@gmail.com',
+            'subject': 'falightstat timertask alert',
+            'content': body
+        });
+    }
+
+});*/
 
 /*client.hset('flight', 'SQ237', '2014-06-16',function(err, reply){
     if (err) {
@@ -43,7 +113,7 @@ var domain = require('domain');
     }
 });*/
 
-client.hkeys("pushmsg", function (err, replies) {
+/*client.hkeys("pushmsg", function (err, replies) {
     console.log(replies.length + " replies:");
     replies.forEach(function (reply, i) {
         console.log("    " + i + ": " + reply);
@@ -51,9 +121,12 @@ client.hkeys("pushmsg", function (err, replies) {
         client.hget("pushmsg",reply,function(err, reply){
             console.log(reply);
         });
+        *//*client.hdel("pushmsg",reply,function(err, reply){
+            console.log(reply);
+        });*//*
     });
     client.quit();
-});
+});*/
 
 
 //var cronJob = require('cron').CronJob;
@@ -116,6 +189,57 @@ client.lrange('userlist', '0', '-1', function (error, res) {
     // 关闭链接
     client.end();
 });*/
+
+
+function getFullDate(str){
+    var today = new Date();
+    var year = today.getFullYear();
+
+    var arr = [],
+        thisyear = new Date(year + ' ' + str),
+        lastyear = new Date((year-1) + ' ' + str),
+        nextyear = new Date((year+1) + ' ' + str),
+        tempdate,
+        s = 10000000000000000000;
+
+    arr.push(thisyear);
+    arr.push(lastyear);
+    arr.push(nextyear);
+    var todayms = today.getTime();
+    for (var i = 0; i < 3; i ++) {
+        var ms = Math.abs(arr[i].getTime() - todayms);
+        if (ms < s) {
+            s = ms;
+            tempdate = arr[i];
+        }
+    }
+
+    return formatDate(tempdate, 'yyyy-MM-dd hh:mm:ss');
+
+}
+
+/**
+ * 日期格式化
+ * @param date 日期，Date的一个实例化对象
+ * @param fmt 需要返回的日期字符串的格式
+ * @returns 日期字符串
+ */
+function formatDate (date, fmt) { //author: meizz
+    console.log('date : ' + date);
+    var o = {
+        "M+": date.getMonth() + 1, //月份
+        "d+": date.getDate(), //日
+        "h+": date.getHours(), //小时
+        "m+": date.getMinutes(), //分
+        "s+": date.getSeconds(), //秒
+        "q+": Math.floor((date.getMonth() + 3) / 3), //季度
+        "S": date.getMilliseconds() //毫秒
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
 
 function a() {
     var str = new b();
